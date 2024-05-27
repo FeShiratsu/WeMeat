@@ -1,0 +1,77 @@
+.home{
+    background-color: #260801;
+    height: 150vh;
+}
+
+h1{margin: 0;}
+
+.home .callout{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.callout img{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.callout p{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    font-family: this;
+    text-shadow: 1rem black;
+}
+
+.callout a{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+
+.callout button{
+    background-color: #F2BF0C;
+    font-family: this;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    width: 15rem;
+    padding: 1rem; 
+}
+
+.callout button:hover{
+    background-color: #f1cf54;
+    border: 2.5px solid black;
+}
+
+
+
+content{
+    font-family: this;
+    color: white;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: this;
+    font-size: 2.5vw;
+}
+
+#blur, .blur{
+    filter: grayscale(100%);
+    filter: blur(2px);
+    transition: 1.5s smooth;
+}
+
+@font-face {
+    font-family: this;
+    src: url('../fonts/JacquesFrancois-Regular.ttf');
+  }

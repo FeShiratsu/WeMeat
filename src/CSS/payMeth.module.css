@@ -1,0 +1,39 @@
+.pMeth{
+    width: 41vw;
+    background-color: #F28B0C;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0rem;
+    font-size: 1.5vw;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-family: this;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.pMeth img,.pMeth p{
+    margin-left: 1rem;
+}
+
+.pMeth:hover{
+    background-color: #f1b872;
+    font-weight: 100;
+}
+
+.pMeth .test{
+    display: none;
+    background-color: #F28B0C;
+    transition: 2s;
+}
+
+.pMeth:hover , .pMeth .test{
+    background-color: #f1b872;
+    display: block;
+    
+}
+
+@font-face {
+    font-family: this;
+    src: url('../fonts/JacquesFrancois-Regular.ttf');
+  }

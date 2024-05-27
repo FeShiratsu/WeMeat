@@ -1,0 +1,24 @@
+
+
+.button button{
+    border: 0;
+    width: 41vw;
+    background-color: #A6E421;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: this;
+    font-weight: 600;
+}
+
+
+.button button:hover{
+    background-color: #b8df66;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: this;
+    src: url('../fonts/JacquesFrancois-Regular.ttf');
+  }

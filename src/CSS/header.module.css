@@ -1,0 +1,61 @@
+.header{
+    background-color: #A60303;
+    
+    border-bottom: 3px solid black;
+    display: flex;
+    font-family: this;
+    justify-content: flex-end
+}
+
+.title{
+    font-size: 2.5vw;
+    font-family: js;
+    font-weight: 900;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.header ul{
+    
+}
+
+ul a{
+    text-align: center;
+    font-size: 1.1vw;
+    width: 5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    background-color: #F28B0C;
+    border: 1px solid black; 
+}
+
+.header ul,header p{
+    display: inline;
+}
+
+.ul a:hover{
+    background-color: #f1cf54;
+}
+
+.header p:hover {
+    transition: 1s;
+    color: white;
+}
+
+.header p:not(:hover){
+    transition: 0.5s;
+    color: black;
+}
+
+@font-face {
+    font-family: js;
+    src: url('../fonts//jsMath-cmr10.ttf');
+  }
+
+  @font-face {
+    font-family: this;
+    src: url('../fonts/JacquesFrancois-Regular.ttf');
+  }

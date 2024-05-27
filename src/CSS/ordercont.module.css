@@ -1,0 +1,120 @@
+#imgs{
+    width: 3rem;
+}
+
+.merger{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15rem;
+    font-family: this;
+    height: 75vh;
+}
+
+.imgs{
+    display: flex;
+}
+
+.swiper{
+    width: 15rem;
+    height: 13rem;
+    margin: 0px;
+}
+
+.swiper img{
+    width: 15rem;
+    height: 13rem;
+    
+}
+
+
+
+
+.orderCont{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: black;
+    justify-content: center;
+}
+
+.cat{
+    width: 100%;
+    padding: 1rem 0rem;
+    font-size: 1.5vw;
+    text-align: center;
+    background-color: #141313;
+    display: block;
+}
+
+.title{
+    width: 100%;
+    padding: 1rem 0rem;
+    font-size: 1.5vw;
+    text-align: center;
+    background-color: #fa2500;
+    
+    display: block;
+}
+
+.price{
+    width: 100%;
+    padding: 0.2rem 0rem;
+    border-top: 2px solid black;
+    font-size: 1.5vw;
+    text-align: center;
+    background-color: #0f0e0e;
+    display: block;
+}
+
+
+.desc{
+    display: block;
+    font-size: 1vw;
+    padding: 1rem 0rem;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    background-color: #161515;
+    text-align: center;
+    width: 100%;
+    height: 8rem;
+}
+
+.cart{
+    width: 100%;
+    border: 0px;
+    padding: 1rem;
+    background-color: #A6E421;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.cart:hover{
+    background-color: #b8df66;
+    font-weight: 100;
+}
+
+.arrows{
+    height: 3rem;
+    align-self: center;
+}
+
+
+.arrows:hover{
+    transition: 0.5s;
+    scale: 1.3;
+}
+
+
+
+@font-face {
+    font-family: this;
+    src: url('../fonts/JacquesFrancois-Regular.ttf');
+}

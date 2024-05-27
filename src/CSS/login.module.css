@@ -1,0 +1,27 @@
+.login{
+    background-color: #260801;
+    height: 97.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.login p{
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+    font-family: this;
+    margin-bottom: 1.5rem;
+    width: 41vw;
+    padding: 1rem 0rem;
+    background-color: #F28B0C;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: this;
+    src: url('../fonts/JacquesFrancois-Regular.ttf');
+  }
