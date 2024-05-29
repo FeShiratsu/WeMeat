@@ -30,14 +30,6 @@
     padding: 1rem;
 }
 
-.cartItem{
-    font-size: 2vw;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(109, 109, 86);
-    padding: 1rem;
-}
-
 @font-face {
     font-family: this;
     src: url('../fonts/JacquesFrancois-Regular.ttf');

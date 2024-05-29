@@ -1,0 +1,27 @@
+.cartItem{
+    display: flex;
+    font-size: 1.5vw;
+    height: 2rem;
+    border-bottom: 1px solid black;
+
+}
+
+.title,.quantity,.price{
+    border-right: 1px solid black;
+    background-color: rgb(109, 109, 86);
+    height: 100%;
+    padding: 1rem
+}
+
+.quantity{
+    width: 20%;
+    
+}
+
+.title{
+    width: 50%;
+}
+
+.price{
+    
+}

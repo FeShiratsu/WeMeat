@@ -1,4 +1,4 @@
-function createItem(name, desc,price,img){ 
+ function createItem(name, desc,price,img,quantity){ 
     return {
          nome: name,
          desc: desc,
@@ -6,4 +6,15 @@ function createItem(name, desc,price,img){
          image: img
     }; 
 } 
+
+
+export function createItemJS(itemInfo){ 
+    return {
+         nome: itemInfo.name,
+         price: itemInfo.price, 
+         quantity: itemInfo.quantity
+    }; 
+} 
+
 export default createItem
+

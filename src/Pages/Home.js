@@ -12,7 +12,6 @@ function Home({state}){
     function changeFilter(){
         if(filter!="blur"){setFilter("blur")}else{setFilter("")}
     }
-    console.log(filter)
     return(
         <main className={styles.home}>
             <div className={`${styles.callout} `} id={filter} style={{filter}}>

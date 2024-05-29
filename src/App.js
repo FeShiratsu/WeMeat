@@ -8,7 +8,7 @@ import Payment from './Pages/Payment';
 import Register from './Pages/Register';
 import Order from './Pages/Order';
 import { useState} from 'react';
-import CartItem from './Components/CartItem';
+import {createItemJS} from './Objects/OrderItem'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -19,7 +19,7 @@ import 'swiper/css/effect-fade'
 
 function App() {
   const [parentState, setParentState] = useState('');
-  const [cart, setCart] = useState([CartItem("brat",1)]);
+  const [cart, setCart] = useState([createItemJS({name: "Name",price: "Price",quantity: "Quantity"})]);
   return (
     <Router>
       <Header></Header>

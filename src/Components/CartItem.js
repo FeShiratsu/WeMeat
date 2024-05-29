@@ -1,7 +1,10 @@
-function CartItem({name,price,changeItem}){
+import styles from '../CSS/cartItem.module.css'
+function CartItem({key,name,price,quantity,changeItem}){
     return (
-        <div>
-            <p></p>
+        <div className={styles.cartItem}>
+            <p className={styles.quantity}> {quantity} </p>
+            <p className={styles.title} > {name} </p>
+            <p className={styles.price} > {price} </p>
         </div>
     );
 }

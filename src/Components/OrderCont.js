@@ -5,8 +5,9 @@ import { Swiper, SwiperSlide} from 'swiper/react'
 import Button from './Button';
 import right from '../Images/right.png'
 import left from '../Images/left.png'
+import {createItemJS} from '../Objects/OrderItem'
 
-function OrderContainer({ items, color, counter, setCounter, title }) {//map the items, update here or main
+function OrderContainer({ items, color, counter, setCounter, title,AddCart }) {//map the items, update here or main
 
     const [swiper, setSwiper] = useState();
     const [pass, setPass] = useState("");
@@ -26,10 +27,19 @@ function OrderContainer({ items, color, counter, setCounter, title }) {//map the
     }
 
     function nextSlide(){
+        console.log(counter)
+        if(swiper.activeIndex==2){
+            swiper.slideTo(0);
+            return
+        }
         swiper.slideNext()
     }
 
     function prevSlide(){
+        if(swiper.activeIndex==0){
+            swiper.slideTo(2);
+            return
+        }
         swiper.slidePrev()
     }
 
@@ -53,7 +63,7 @@ function OrderContainer({ items, color, counter, setCounter, title }) {//map the
                 <p className={styles.title}>{items[counter].nome}</p>
                 <p className={styles.price}>{items[counter].price}U$</p>
                 <p className={styles.desc}>{items[counter].desc}</p>
-                <button className={styles.cart}>Add to cart</button>
+                <button onClick={() => AddCart(items[counter],++counter)} className={styles.cart}>Add to cart</button>
             </div>
             </div>
             <img onClick={nextSlide} id='next' className={styles.arrows} src={right}></img>
