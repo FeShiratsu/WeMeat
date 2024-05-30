@@ -19,7 +19,7 @@ import 'swiper/css/effect-fade'
 
 function App() {
   const [parentState, setParentState] = useState('');
-  const [cart, setCart] = useState([createItemJS({name: "Name",price: "Price",quantity: "Quantity"})]);
+  const [cart, setCart] = useState([createItemJS({name: "Name",price: "Price",quantity: "Qnt"})]);
   return (
     <Router>
       <Header></Header>

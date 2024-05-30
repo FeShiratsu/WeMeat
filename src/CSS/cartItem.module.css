@@ -10,7 +10,7 @@
     border-right: 1px solid black;
     background-color: rgb(109, 109, 86);
     height: 100%;
-    padding: 1rem
+
 }
 
 .quantity{
@@ -23,5 +23,5 @@
 }
 
 .price{
-    
+    width: 30%;
 }

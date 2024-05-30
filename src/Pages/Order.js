@@ -44,12 +44,13 @@ function Order({cart,cartSet}) {
     const [indexDrinks, setDrinks] = useState(0);
 
 
-    function AddToCart(item,counter){
-        console.log(counter)
-        let tempCart = cart
-        tempCart[cart.length] = createItemJS({name: item.nome,price: item.price,quantity:item.quantity})
-        cartSet(tempCart)
-        console.log(cart,counter)
+    function AddToCart(item){
+        alert(`Added 1 ${item.nome} to the cart!`);
+        let tempCart = [...cart]
+        tempCart[cart.length] = createItemJS({name: item.nome,price: item.price,quantity:1})
+        console.log(cart)
+        cartSet( tempCart)
+        console.log(cart)
     }
 
     return (

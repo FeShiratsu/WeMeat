@@ -4,7 +4,7 @@ function CartItem({key,name,price,quantity,changeItem}){
         <div className={styles.cartItem}>
             <p className={styles.quantity}> {quantity} </p>
             <p className={styles.title} > {name} </p>
-            <p className={styles.price} > {price} </p>
+            <p className={styles.price}> {price}</p>
         </div>
     );
 }

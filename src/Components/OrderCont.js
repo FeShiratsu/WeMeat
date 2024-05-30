@@ -42,7 +42,6 @@ function OrderContainer({ items, color, counter, setCounter, title,AddCart }) {/
         }
         swiper.slidePrev()
     }
-
     return (
         <div className={styles.merger}>
             <img onClick={prevSlide} id='back'  className={styles.arrows} src={left}></img>
@@ -63,7 +62,7 @@ function OrderContainer({ items, color, counter, setCounter, title,AddCart }) {/
                 <p className={styles.title}>{items[counter].nome}</p>
                 <p className={styles.price}>{items[counter].price}U$</p>
                 <p className={styles.desc}>{items[counter].desc}</p>
-                <button onClick={() => AddCart(items[counter],++counter)} className={styles.cart}>Add to cart</button>
+                <button onClick={() => AddCart(items[counter])} className={styles.cart}>Add to cart</button>
             </div>
             </div>
             <img onClick={nextSlide} id='next' className={styles.arrows} src={right}></img>
